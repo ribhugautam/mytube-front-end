@@ -6,7 +6,7 @@ function VideoCard() {
             <div className="aspect-video overflow-hidden rounded-l-lg bg-transparent ">
               <img
                 src="https://loremflickr.com/320/240/dog"
-                className="bg-transparent object-cover h-full w-full aspect-video"
+                className="bg-transparent object-fill h-full w-full aspect-video"
               />
             </div>
             <div className="bg-transparent py-2 flex flex-col gap-2 px-4">

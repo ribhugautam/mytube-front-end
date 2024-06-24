@@ -8,7 +8,7 @@ function Home() {
       <TopBar />
       <div className="flex flex-grow">
         <SideBar />
-        <div className={`flex flex-col gap-4 pb-[90px] h-dvh w-full overflow-y-scroll p-4`}>
+        <div className={`flex flex-col gap-4 pb-[106px] h-dvh w-full overflow-y-scroll mt-4 pt-0 p-4`}>
           {
             Array.from({length: 10}).map((_, index) => <VideoCard key={index} />)
           }

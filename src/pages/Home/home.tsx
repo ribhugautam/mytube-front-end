@@ -8,10 +8,10 @@ function Home() {
       <TopBar />
       <div className="flex flex-grow">
         <SideBar />
-        <div className={`flex flex-col gap-4 pb-[106px] h-dvh w-full overflow-y-scroll mt-4 pt-0 p-4`}>
-          {
-            Array.from({length: 10}).map((_, index) => <VideoCard key={index} />)
-          }
+        <div className="flex flex-wrap gap-4 justify-center h-dvh w-full overflow-y-scroll pb-[108px] mt-4 pt-0 p-4">
+          {Array.from({length: 12}).map((_, index) => (
+            <VideoCard key={index} />
+          ))}
         </div>
       </div>
     </div>

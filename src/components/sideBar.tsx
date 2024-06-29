@@ -1,10 +1,10 @@
 import { IoIosHome } from "react-icons/io";
-import { MdOutlineExplore } from "react-icons/md";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 import { MdOutlineSubscriptions } from "react-icons/md";
 import { MdHistory } from "react-icons/md";
 import { BiSolidVideos } from "react-icons/bi";
 import { MdOutlineWatchLater } from "react-icons/md";
+import { MdUpload } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function SideBar() {
@@ -19,9 +19,9 @@ function SideBar() {
             <IoIosHome size={20} className="bg-transparent" />
             Home
           </button>
-          <button className="bg-transparent flex justify-left items-center gap-2 hover:bg-neutral-700 text-neutral-300 hover:text-white font-bold py-2 px-4 rounded-3xl w-full">
-            <MdOutlineExplore size={20} className="bg-transparent" />
-            Explore
+          <button onClick={() => navigate("/upload")} className="bg-transparent flex justify-left items-center gap-2 hover:bg-neutral-700 text-neutral-300 hover:text-white font-bold py-2 px-4 rounded-3xl w-full">
+            <MdUpload size={20} className="bg-transparent" />
+            Upload
           </button>
           <button className="bg-transparent flex justify-left items-center gap-2 hover:bg-neutral-700 text-neutral-300 hover:text-white font-bold py-2 px-4 rounded-3xl w-full">
             <MdOutlineSubscriptions size={20} className="bg-transparent" />

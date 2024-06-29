@@ -17,7 +17,7 @@ function TopBar() {
   };
 
   return (
-    <div className="bg-neutral-800 flex px-4 py-4 w-full">
+    <div className="bg-neutral-800 flex px-4 pr-6 py-4 w-full">
       <div className="mx-auto w-full bg-transparent flex justify-between items-center">
         <div className="flex flex-row bg-transparent ml-4 ">
           <div className="px-[26px] bg-red-700 py-2 rounded-xl font-bold">
@@ -58,7 +58,7 @@ function TopBar() {
           </button>
         </div>
         <div className="flex bg-transparent items-center gap-4">
-          {isLoggedIn ?? (
+          {!isLoggedIn ? (
             <img
               src="https://i.pravatar.cc/300"
               alt="profile"
@@ -66,9 +66,9 @@ function TopBar() {
               onError={(e) =>
                 (e.currentTarget.src = "https://i.pravatar.cc/300")
               }
-              className="w-10 h-10 rounded-full"
+              className="w-8 h-8 rounded-full"
             />
-          )}
+          ) : null}
 
           {isLoggedIn ? (
             <IoMdLogIn

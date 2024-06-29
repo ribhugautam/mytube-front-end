@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./pages/Home/home.tsx";
 import Register from "./pages/Register/register.tsx";
 import SignIn from "./pages/SignIn/signIn.tsx";
+import Upload from "./pages/Upload/upload.tsx";
 
 const router = createBrowserRouter([
   {
@@ -13,17 +14,21 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path : "/home",
+    path: "/home",
     element: <Home />,
   },
   {
-    path : "/register",
+    path: "/register",
     element: <Register />,
   },
   {
-    path : "/login",
+    path: "/login",
     element: <SignIn />,
-  }
+  },
+  {
+    path: "/upload",
+    element: <Upload />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
